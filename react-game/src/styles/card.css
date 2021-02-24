@@ -1,0 +1,26 @@
+.card-game {
+  width: 100px;
+  height: 150px;
+  margin: 5px;
+  transition: 2s;
+}
+.card-body {
+  padding: 0;
+  transition: 2s;
+}
+.image-card {
+  width: 100px;
+  height: 150px;
+  border-radius: 0.25rem;
+  transition: 2s;
+}
+.board {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+}
