@@ -2,19 +2,22 @@
   width: 100px;
   height: 150px;
   margin: 5px;
-  transition: 2s;
+  transition-duration: 1s;
 }
 .card-body {
   padding: 0;
-  transition: 2s;
+  transition: 1s;
 }
 .image-card {
   width: 100px;
   height: 150px;
   border-radius: 0.25rem;
-  transition: 2s;
+}
+.card.card-back {
+  transform: rotateY(180deg);
 }
 .board {
+  position: relative;
   display: flex;
   margin: 0 auto;
   align-items: center;
@@ -23,4 +26,17 @@
   max-width: 900px;
   width: 100%;
   height: auto;
+  border-radius: 5px;
+  padding: 10px;
+}
+.btn-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  padding: 2px;
+  z-index: 2;
+  border-radius: 100% !important;
 }

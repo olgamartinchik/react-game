@@ -20,6 +20,11 @@ code {
 }
 a {
   text-decoration: none;
+  color: rgb(73, 73, 73) !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: rgb(214, 205, 205) !important;
 }
 h1,
 h2,
@@ -37,4 +42,19 @@ button {
 }
 button:focus {
   outline: none;
+}
+.header {
+  border-bottom: 1px solid cadetblue;
+}
+.main {
+  margin-top: 50px;
+  padding: 40px 0 40px;
+}
+
+.footer-container {
+  border-top: 1px solid cadetblue;
+  margin-top: 50px;
+}
+.footer {
+  padding: 15px 0;
 }
