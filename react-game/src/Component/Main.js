@@ -58,6 +58,8 @@ export default class Main extends Component {
       rightSteps: 0,
       falseSteps: 0,
       cardsLength: len,
+      isGameOver: false,
+      buttonNewGame: null,
     };
   }
   componentDidMount() {
@@ -77,6 +79,7 @@ export default class Main extends Component {
     const currentState = this.state.active;
     this.setState({ active: !currentState });
   }
+
   rotateCardBack(cardIndex, front) {
     // this.audio.play();
     this.setState({
@@ -111,19 +114,28 @@ export default class Main extends Component {
         // console.log("Different");
         this.state.falseSteps++;
         this.state.steps++;
+
         setTimeout(() => {
           this.rotateCardBack(this.state.firstCard, false);
           this.rotateCardBack(cardIndex, false);
           this.setState({ firstCard: null });
         }, 1500);
       }
+      let counter = 1;
+      for (let i = 0; i < this.state.gameCards.length; i++) {
+        if (this.state.gameCards[i].front === true) {
+          counter++;
+          // console.log("11111111", this.state.cardsLength);
+        }
+      }
+      console.log("eeeee", counter);
+      if (counter === this.state.cardsLength * 2) {
+        this.setState({
+          isGameOver: true,
+        });
+      }
     }
     this.rotateCardBack(cardIndex, !this.state.gameCards[cardIndex].front);
-
-    // console.log(!this.state.front);
-    if (!this.state.front) {
-      this.state.gameCards.map((image, index) => {});
-    }
   }
 
   resetStatistics() {
@@ -146,6 +158,7 @@ export default class Main extends Component {
       rightSteps: 0,
       falseSteps: 0,
       cardsLength: 6,
+      isGameOver: false,
     });
   }
 
@@ -198,15 +211,31 @@ export default class Main extends Component {
                 resetStatistics={this.resetStatistics}
               />
             </div>
-            <div className='newGame' onClick={this.gameOver}>
-              {/* <h6>Game Over!</h6> */}
-              <Button
+            <div className='newGame'>
+              {this.state.isGameOver === true ? <h6>GAME OVER!</h6> : ""}
+              {this.state.isGameOver === true ? (
+                <p>Completed the game in {this.state.steps} steps</p>
+              ) : (
+                ""
+              )}
+              {this.state.isGameOver === true ? (
+                <Button
+                  variant='success'
+                  size='sm'
+                  onClick={this.resetStatistics}
+                >
+                  New Game
+                </Button>
+              ) : (
+                ""
+              )}
+              {/* <Button
                 variant='success'
                 size='sm'
                 onClick={this.resetStatistics}
               >
                 New Game
-              </Button>
+              </Button> */}
             </div>
 
             <div
