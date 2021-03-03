@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/Modal.css";
+import "./../styles/ModalRules.css";
 import { Button } from "react-bootstrap";
 
 export default class Modal extends React.Component {
