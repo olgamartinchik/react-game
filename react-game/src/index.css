@@ -76,6 +76,7 @@ button:focus {
 }
 .btn_audio.btn {
   position: absolute;
+  padding: 2px !important;
   right: 25px;
   top: 20px;
   display: flex !important;
@@ -83,7 +84,6 @@ button:focus {
   align-items: center !important;
   text-align: center !important;
   border-radius: 100% !important;
-  padding: 2px !important;
 }
 .btn_mode_active12 {
   background-color: #cbe6fa !important;
