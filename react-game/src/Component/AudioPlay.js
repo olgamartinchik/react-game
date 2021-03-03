@@ -15,10 +15,8 @@ export default class AudioPlay extends Component {
   handleClickBtnAudio() {
     if (this.state.isMusicPlaying) {
       this.audio.pause();
-      //   console.log(false);
     } else {
       this.audio.play();
-      //   console.log(true);
     }
     this.setState((prevState) => {
       return {
@@ -34,7 +32,6 @@ export default class AudioPlay extends Component {
         <Button
           className='btn_audio'
           variant='outline-warning'
-          //
           onClick={this.handleClickBtnAudio}
         >
           <audio
@@ -42,7 +39,6 @@ export default class AudioPlay extends Component {
             ref={(audioTag) => {
               this.audio = audioTag;
             }}
-            // controls
           />
           <img
             width='40'
@@ -53,7 +49,6 @@ export default class AudioPlay extends Component {
             }`}
             alt='button icon'
           />
-          {/* <PlayButton isMusicPlaying={this.state.isMusicPlaying} /> */}
         </Button>
       </>
     );

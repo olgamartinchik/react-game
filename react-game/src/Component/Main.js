@@ -81,7 +81,6 @@ export default class Main extends Component {
   }
 
   rotateCardBack(cardIndex, front) {
-    // this.audio.play();
     this.setState({
       gameCards: this.state.gameCards.map((image, index) => {
         if (index === cardIndex) {
@@ -97,21 +96,18 @@ export default class Main extends Component {
   }
 
   rotate(cardIndex) {
-    // this.audio.play();
     if (this.state.firstCard === null) {
       this.setState({ firstCard: cardIndex });
     } else {
       const firstCardContent = this.state.gameCards[this.state.firstCard]
         .content;
       const secondCardContent = this.state.gameCards[cardIndex].content;
-      // console.log(firstCardContent, secondCardContent);
+
       if (firstCardContent === secondCardContent) {
-        // console.log("Same");
         this.state.rightSteps++;
         this.state.steps++;
         this.setState({ firstCard: null });
       } else {
-        // console.log("Different");
         this.state.falseSteps++;
         this.state.steps++;
 
@@ -125,7 +121,6 @@ export default class Main extends Component {
       for (let i = 0; i < this.state.gameCards.length; i++) {
         if (this.state.gameCards[i].front === true) {
           counter++;
-          // console.log("11111111", this.state.cardsLength);
         }
       }
       console.log("eeeee", counter);
@@ -229,13 +224,6 @@ export default class Main extends Component {
               ) : (
                 ""
               )}
-              {/* <Button
-                variant='success'
-                size='sm'
-                onClick={this.resetStatistics}
-              >
-                New Game
-              </Button> */}
             </div>
 
             <div

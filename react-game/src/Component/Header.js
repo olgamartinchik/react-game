@@ -9,7 +9,6 @@ export default class Header extends Component {
         <header className='header'>
           <div className='container'>
             <AudioPlay />
-
             <h1>Memory Game</h1>
             <ModalRules />
           </div>
