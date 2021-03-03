@@ -1,1 +1,1 @@
-# react-game.io
+# https://olgamartinchik.github.io/react-game/
