@@ -20,7 +20,7 @@ export default class footer extends Component {
             <a href='https://github.com/olgamartinchik'>Olga Martinchik</a>
           </div>
           <div>
-            <a href='https://coreui.io'>
+            <a href='https://youtu.be/vu7ioZfnOTQ'>
               Game description
               <img
                 className='ml-2'

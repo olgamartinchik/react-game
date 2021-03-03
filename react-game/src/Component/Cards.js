@@ -14,10 +14,12 @@ class Cards extends Component {
     return (
       <>
         <Card
+          isWallGame={this.props.isWallGame}
+          changeStyle={this.props.changeStyle}
           body
-          className={`bg-info border="info" card-game ${
-            this.props.front ? "card-back" : ""
-          }`}
+          className={`${
+            this.props.isWallGame ? "bg-danger" : "bg-info"
+          } border="info" card-game ${this.props.front ? "card-back" : ""}`}
           onClick={this.props.rotate}
         >
           {content}

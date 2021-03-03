@@ -10,6 +10,8 @@ class Field extends Component {
       return (
         <>
           <Cards
+            isWallGame={this.props.isWallGame}
+            changeStyle={this.props.changeStyle}
             key={`card-${index}`}
             rotate={() => this.props.rotate(index)}
             front={image.front}

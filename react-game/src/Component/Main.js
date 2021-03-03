@@ -36,6 +36,7 @@ export default class Main extends Component {
     this.sortCards = this.sortCards.bind(this);
     this.buildCardsState = this.buildCardsState.bind(this);
     this.resetStatistics = this.resetStatistics.bind(this);
+    this.changeStyle = this.changeStyle.bind(this);
   }
 
   buildCardsState(len) {
@@ -60,7 +61,14 @@ export default class Main extends Component {
       cardsLength: len,
       isGameOver: false,
       buttonNewGame: null,
+      isWallGame: false,
     };
+  }
+  changeStyle() {
+    let changing = this.state.isWallGame;
+    this.setState({
+      isWallGame: !changing,
+    });
   }
   componentDidMount() {
     let localStorageRef = JSON.parse(localStorage.getItem("localStorageData"));
@@ -154,6 +162,7 @@ export default class Main extends Component {
       falseSteps: 0,
       cardsLength: 6,
       isGameOver: false,
+      isWallGame: false,
     });
   }
 
@@ -198,7 +207,18 @@ export default class Main extends Component {
                 >
                   Play with 36 cards
                 </Button>
+                <div>
+                  <Button
+                    className={`${
+                      this.state.isWallGame ? "bg-info" : "bg-danger"
+                    }`}
+                    onClick={this.changeStyle}
+                  >
+                    Change Style Game
+                  </Button>
+                </div>
               </div>
+
               <Statistics
                 rightSteps={this.state.rightSteps}
                 falseSteps={this.state.falseSteps}
@@ -253,6 +273,8 @@ export default class Main extends Component {
                 </Button>
 
                 <Field
+                  isWallGame={this.state.isWallGame}
+                  changeStyle={this.changeStyle}
                   gameCards={this.state.gameCards}
                   rotate={this.rotate}
                   front={this.front}
