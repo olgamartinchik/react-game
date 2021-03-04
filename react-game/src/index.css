@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: #ffc10727 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a {
+  text-decoration: none;
+  color: rgb(73, 73, 73) !important;
+}
+a:hover {
+  text-decoration: none !important;
+  color: rgb(214, 205, 205) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+input,
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+.header {
+  background-color: #ffc1072e;
+}
+.header .container {
+  padding: 15px 0;
+  display: flex;
+  padding: 15px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  height: 100%;
+}
+.main .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 40px;
+}
+
+.footer-container {
+  margin-top: 50px;
+  background-color: #ffc1072e;
+}
+.footer {
+  padding: 15px 0;
+}
+.btn_audio.btn {
+  position: absolute;
+  padding: 2px !important;
+  right: 25px;
+  top: 20px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  border-radius: 100% !important;
+}
+.btn_mode_active12 {
+  background-color: #cbe6fa !important;
+}
+.btn_mode_active24 {
+  background-color: #faec9f !important;
+}
+.btn_mode_active36 {
+  background-color: #f58b8b !important;
+}

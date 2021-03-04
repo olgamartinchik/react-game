@@ -1,0 +1,104 @@
+.card-game {
+  width: 100px;
+
+  height: 150px;
+
+  margin: 5px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.card-body {
+  padding: 0;
+  transition: 1s;
+}
+.image-card {
+  width: 100px;
+  height: 150px;
+  border-radius: 0.25rem;
+}
+.card.card-back {
+  transform: rotateY(180deg);
+}
+.board {
+  position: relative;
+  display: flex;
+  margin: 0 15px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.board_max {
+  margin: 0 15px;
+  max-width: 1500px;
+}
+.board_container {
+  display: flex;
+}
+
+.btn-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  padding: 2px;
+  z-index: 2;
+  border-radius: 100% !important;
+}
+.newGame {
+  margin: 10px 0;
+  transition: 3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media all and (max-width: 1058px) {
+  .card-game {
+    width: 90px;
+    height: 140px;
+  }
+  .image-card {
+    width: 90px;
+    height: 140px;
+  }
+}
+@media all and (max-width: 1040px) {
+  .card-game {
+    width: 85px;
+    height: 130px;
+  }
+  .image-card {
+    width: 85px;
+    height: 130px;
+  }
+}
+@media all and (max-width: 950px) {
+  .card-game {
+    width: 70px;
+    height: 115px;
+  }
+  .image-card {
+    width: 70px;
+    height: 115px;
+  }
+}
+@media all and (max-width: 747px) {
+  .card-game {
+    width: 60px;
+    height: 105px;
+  }
+  .image-card {
+    width: 60px;
+    height: 105px;
+  }
+}
