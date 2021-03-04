@@ -1,27 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "6ec0f58703d3c9f941e6",
+    "revision": "439d04a7107b81122db4",
     "url": "/react-game/static/css/main.442e50d1.chunk.css"
   },
   {
-    "revision": "6ec0f58703d3c9f941e6",
-    "url": "/react-game/static/js/main.d1ae84f4.chunk.js"
+    "revision": "439d04a7107b81122db4",
+    "url": "/react-game/static/js/main.9446f3aa.chunk.js"
   },
   {
-    "revision": "28bda7c1bdfc906d990e",
-    "url": "/react-game/static/js/runtime~main.65d3c8cb.js"
+    "revision": "01a1b31105e3855d5ec0",
+    "url": "/react-game/static/js/runtime~main.5891b3ab.js"
   },
   {
-    "revision": "8c2c3fa652c6bf26b345",
+    "revision": "94253d790e961e68b4a7",
     "url": "/react-game/static/css/2.e1d167d5.chunk.css"
   },
   {
-    "revision": "8c2c3fa652c6bf26b345",
-    "url": "/react-game/static/js/2.817dcc0f.chunk.js"
+    "revision": "94253d790e961e68b4a7",
+    "url": "/react-game/static/js/2.5a19d546.chunk.js"
   },
   {
-    "revision": "efab8cfc21735bb40096",
-    "url": "/react-game/static/js/3.3c9fdc1a.chunk.js"
+    "revision": "3bfda274608cf9376356",
+    "url": "/react-game/static/js/3.f05a77d3.chunk.js"
+  },
+  {
+    "revision": "9895b1cdc037f08181b5af27151f039b",
+    "url": "/react-game/static/media/1.9895b1cd.mp3"
   },
   {
     "revision": "8dda0d13cb8fd9335ea00cb74251b5d9",
@@ -96,7 +100,7 @@ self.__precacheManifest = [
     "url": "/react-game/static/media/9.9eef5fba.jpg"
   },
   {
-    "revision": "557e426f26f35f190b4b8365ec98b1a2",
+    "revision": "063e99578444044f04f8761fe04cb556",
     "url": "/react-game/index.html"
   }
 ];
