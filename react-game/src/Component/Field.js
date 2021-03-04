@@ -18,7 +18,7 @@ class Field extends Component {
             content={
               <img
                 className='image-card'
-                src={window.location.origin + link + image.content}
+                src={link + image.content}
                 alt='card icon'
               />
             }

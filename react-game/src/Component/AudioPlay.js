@@ -35,7 +35,7 @@ export default class AudioPlay extends Component {
           onClick={this.handleClickBtnAudio}
         >
           <audio
-            src={window.location.origin + linkAudio}
+            src={linkAudio}
             ref={(audioTag) => {
               this.audio = audioTag;
             }}
