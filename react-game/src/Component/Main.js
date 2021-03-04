@@ -131,7 +131,7 @@ export default class Main extends Component {
           counter++;
         }
       }
-      console.log("eeeee", counter);
+
       if (counter === this.state.cardsLength * 2) {
         this.setState({
           isGameOver: true,
